@@ -29,6 +29,8 @@ How to contribute:
 
    used in: {DOI1 (equation number(s)), DOI2 (equation number(s))}
    
+ - If you want to use pictures, make them locally and add the pdf, jpg
+   or png to a reasonable place in the pics folder.
  - \input the file in the main file master.tex in a fitting section
  - commit your changes 
  - merge the main repository into you fork
