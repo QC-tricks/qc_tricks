@@ -15,6 +15,7 @@ How to contribute:
  - For each trick make a new file which holds all the information
    about the trick. It should look like this:
    
+   ```
    \subsection{title}
    methods: {list methods in which the trick is used separated by commas}
    courses: {list of courses the trick is used in}
@@ -28,6 +29,7 @@ How to contribute:
    Explanation why it works
 
    used in: {DOI1 (equation number(s)), DOI2 (equation number(s))}
+   ```
    
  - If you want to use pictures, make them locally and add the pdf, jpg
    or png to a reasonable place in the pics folder.
