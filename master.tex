@@ -1,0 +1,80 @@
+\documentclass[a4paper,dvipsnames]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{amsmath,amsfonts,amssymb} % Mathepakete
+\usepackage{fancyhdr}
+\usepackage{units}
+\usepackage{graphicx}
+%\usepackage{placeins}
+\usepackage{tikz,pgfplots}
+\usepackage{tikz-qtree}
+\usepackage{caption}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{dsfont} % Einheitsmatrix
+\usepackage{mathrsfs} % geschwungenes H
+\usepackage{braket} % setzt Bra-Ket-Schreibweise richtig
+\usepackage{lmodern,dsfont}
+\usepackage{booktabs}
+\usepackage{setspace}
+%\usepackage{slashbox} % erm?glicht diagonale Linien in Tabellen
+\usepackage[toc,page]{appendix}
+\usepackage[printonlyused,withpage]{acronym}
+\usepackage{afterpage}
+\usepackage{listings}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{pdfpages}
+\usepackage{threeparttable}
+
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt, basicstyle=\footnotesize }
+\makeatletter
+\lst@AddToHook{TextStyle}{\let\lst@basicstyle\normalsize}
+\makeatother
+
+%Formatierung der Kapitelüberschriften
+%\usepackage[Lenny]{fncychap}
+%Formatierung der Tabellen- und Bildunterschriften
+\captionsetup[figure]{format=plain, justification=raggedright, singlelinecheck=false,
+                      font=small, labelfont=bf}
+\captionsetup[table]{position=top, format=plain, justification=raggedright,
+                     singlelinecheck=false, font=small, labelfont=bf}
+
+
+%Seitenformatierung
+\setstretch{1.0}
+%\setlength{\extrarowheight}{2pt}
+\parindent = 0mm
+\pagestyle{fancy}
+\rhead[\leftmark]{\thepage}
+\lhead[\thepage]{\rightmark}
+\chead{}
+\rfoot{}
+\lfoot{}
+\cfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+
+%%meine Farben
+\definecolor{diplom1}{RGB}{101 156 239}
+\definecolor{diplom2}{RGB}{000 000 128}
+\definecolor{diplom3}{RGB}{153,0,0} %unirot
+\definecolor{diplom4}{RGB}{255,165,0}
+\definecolor{diplom5}{RGB}{51,37,60}
+
+
+\pgfplotsset{compat=1.8}
+
+\begin{document}
+
+\tableofcontents
+
+\include{electronic_structure/main_es}
+\include{properties/main_pp}
+
+
+\bibliographystyle{jcp}
+\bibliography{theolit}
+
+
+\end{document}
