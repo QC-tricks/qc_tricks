@@ -33,7 +33,7 @@ How to contribute:
    or png to a reasonable place in the pics folder.
  - \input the file in the main file master.tex in a fitting section
  - commit your changes 
- - merge the main repository into you fork
+ - merge the main repository into your fork
  - file a pull request to get your changes incorporated in the main branch
  
  Enjoy the collection :-)
