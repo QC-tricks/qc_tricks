@@ -17,8 +17,8 @@ How to contribute:
    
    ```
    \subsection{title}
-   methods: {list methods in which the trick is used separated by commas}
-   courses: {list of courses the trick is used in}
+   methods: {list methods in which the trick is used separated by commas}\\
+   courses: {list of courses the trick is used in}\\
    
    Explanation when and why this trick is relevant
 
@@ -28,6 +28,7 @@ How to contribute:
    
    Explanation why it works
 
+   \vspace{0.5cm}
    used in: {DOI1 (equation number(s)), DOI2 (equation number(s))}
    ```
    
